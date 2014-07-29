@@ -113,7 +113,6 @@
         `(gnus-header-from ((,class (:foreground ,var))))
         `(gnus-header-name ((,class (:foreground ,type))))
         `(gnus-header-subject ((,class (:foreground ,func :bold t))))
-        `(magit-item-highlight ((,class (:background ,bg3))))
         `(mu4e-view-url-number-face ((,class (:foreground ,type))))
         `(mu4e-cited-1-face ((,class (:foreground ,fg2))))
         `(mu4e-cited-7-face ((,class (:foreground ,fg3))))
