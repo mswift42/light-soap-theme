@@ -1,7 +1,7 @@
 ;;; light-soap-theme.el --- Emacs 24 theme with a light background.
 ;; martin haesler
 ;; https://github.com/mswift42/light-soap-theme
-;; Version: 0.2
+;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
 ;; Created with emacs-theme-generator, https://github.com/mswift42/theme-creator.
 ;; Copyright (C) 2014 , martin haesler
@@ -27,25 +27,25 @@
 
 (deftheme light-soap)
  (let ((class '((class color) (min-colors 89)))
-       (fg1 "#383838")
-       (fg2 "#464646")
-       (fg3 "#545454")
-       (fg4 "#636363")
-       (bg1 "#eff0d5")
-       (bg2 "#dadac2")
-       (bg3 "#c5c5af")
-       (bg4 "#b0b19d")
-       (key2 "#55698b")
-       (key3 "#3a4e6f")
-       (builtin "#714355")
-       (keyword "#40587d")
-       (const   "#3f5b32")
-       (comment "#a1a1a1")
-       (func    "#305f5e")
-       (str     "#64502f")
-       (type    "#7b4135")
-       (var     "#5f4473")
-       (warning "#f70a0a"))
+       (fg1 "#474747")
+       (fg2 "#545454")
+       (fg3 "#616161")
+       (fg4 "#6f6f6f")
+       (bg1 "#edf0d1")
+       (bg2 "#d8dabe")
+       (bg3 "#c3c5ac")
+       (bg4 "#aeb19a")
+       (key2 "#60557e")
+       (key3 "#463b62")
+       (builtin "#764865")
+       (keyword "#4e426f")
+       (const   "#3e5e7d")
+       (comment "#8a8a8a")
+       (func    "#763e3d")
+       (str     "#6c4e2e")
+       (type    "#455a2d")
+       (var     "#335e52")
+       (warning "#ff0505"))
    (custom-theme-set-faces
    'light-soap
         `(default ((,class (:background ,bg1 :foreground ,fg1))))
@@ -58,18 +58,18 @@
         `(font-lock-function-name-face ((,class (:foreground ,func :bold t))))
         `(font-lock-keyword-face ((,class (:bold ,class :foreground ,keyword))))
         `(font-lock-string-face ((,class (:foreground ,str))))
-        `(font-lock-type-face ((,class (:foreground ,type }}))))
+        `(font-lock-type-face ((,class (:foreground ,type ))))
         `(font-lock-variable-name-face ((,class (:foreground ,var))))
         `(font-lock-warning-face ((,class (:foreground ,warning :background ,bg2))))
         `(region ((,class (:background ,fg3 :foreground ,bg2))))
         `(highlight ((,class (:foreground ,fg3 :background ,bg3))))
-        `(hl-line ((,class (:background  ,bg2))))
+        `(hl-line ((,class (:background  ,bg3))))
         `(fringe ((,class (:background ,bg2 :foreground ,fg4))))
         `(cursor ((,class (:background ,bg3))))
         `(show-paren-match-face ((,class (:background ,warning))))
         `(isearch ((,class (:bold t :foreground ,warning :background ,bg3))))
         `(mode-line ((,class (:box (:line-width 1 :color nil :style released-button) :bold t :foreground ,fg4 :background ,bg2))))
-        `(mode-line-inactive ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,fg2 :background ,bg1)))
+        `(mode-line-inactive ((,class (:box (:line-width 1 :color nil :style pressed-button) :foreground ,fg2 :background ,bg1))))
         `(mode-line-buffer-id ((,class (:bold t :foreground ,fg2 :background nil))))
         `(mode-line-highlight ((,class (:background ,bg4))))
         `(vertical-border ((,class (:foreground ,fg3))))
@@ -143,7 +143,8 @@
         `(rainbow-delimiters-depth-6-face ((,class :foreground ,fg1)))
         `(rainbow-delimiters-depth-7-face ((,class :foreground ,type)))
         `(rainbow-delimiters-depth-8-face ((,class :foreground ,var)))
-        `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning))))))
+        `(magit-item-highlight ((,class :background ,bg3)))
+        `(rainbow-delimiters-unmatched-face ((,class :foreground ,warning)))))
 
 ;;;###autoload
 (when load-file-name
