@@ -1,12 +1,11 @@
 ;;; light-soap-theme.el --- Emacs 24 theme with a light background.
+
 ;; martin haesler
 ;; https://github.com/mswift42/light-soap-theme
 ;; Version: 0.1
 ;; Package-Requires: ((emacs "24"))
 ;; Created with emacs-theme-generator, https://github.com/mswift42/theme-creator.
 ;; Copyright (C) 2014 , martin haesler
-
-;;; Commentary:
 
 ;; This program is free software: you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -22,6 +21,8 @@
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;; This file is not part of Emacs.
+
+;;; Commentary:
 
 ;;; Code:
 
